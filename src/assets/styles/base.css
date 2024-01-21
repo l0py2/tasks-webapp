@@ -1,0 +1,16 @@
+:root {
+	--fg-color: #eceff4;
+	--bg-color: #2e3440;
+	--high-bg-color: #4c566a;
+	--sel-color: #81a1c1;
+	--red-color: #bf616a;
+	--yellow-color: #ebcb8b;
+	--green-color: #a3be8c;
+	--normal-border: 12px 32px 12px 32px;
+}
+
+@font-face {
+	font-family: "roboto-slab";
+	src: url("@/assets/fonts/roboto-slab/font.ttf");
+	font-weight: 400;
+}

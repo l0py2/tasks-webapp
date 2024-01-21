@@ -1,0 +1,161 @@
+@import "./base.css";
+
+.material-symbols-outlined {
+	vertical-align: middle;
+}
+
+#app {
+	margin: 0;
+}
+
+*, ::before, ::after {
+	box-sizing: border-box;
+	margin: 0;
+	border: none;
+	padding: 0;
+	color: inherit;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+html {
+	color: var(--fg-color);
+	background-color: var(--bg-color);
+	font-family: robot-slab;
+	font-size: 20px;
+}
+
+button {
+	color: var(--fg-color);
+	background-color: var(--sel-color);
+	border: 2px solid var(--fg-color);
+	border-radius: var(--normal-border);
+	padding: 20px;
+}
+
+button:hover {
+	color: var(--bg-color);
+	background-color: var(--fg-color);
+}
+
+button:disabled {
+	color: var(--fg-color);
+	background-color: transparent;
+	cursor: default;
+}
+
+button, a, .sel {
+	cursor: pointer;
+}
+
+a, .sel {
+	color: var(--sel-color);
+}
+
+a:hover, .sel:hover {
+	color: var(--fg-color);
+}
+
+main {
+	padding: 20px;
+}
+
+button, h1, h2, h3, p, div, form, table, ul, pre {
+	margin: 10px;
+}
+
+input, textarea {
+	border-style: solid;
+	border-color: var(--sel-color);
+}
+
+input {
+	border-width: 0 0 2px 0;
+}
+
+textarea {
+	border-width: 2px;
+	resize: vertical;
+	height: 10em;
+}
+
+.form-blocks {
+	width: 100%;
+	max-width: 800px;
+}
+
+.form-blocks > div {
+	width: 100%;
+}
+
+.form-blocks > div > label, .form-blocks > div > input, .form-blocks > div > textarea {
+	display: inline-block;
+}
+
+.form-blocks > div > input, .form-blocks > div > textarea {
+	width: 100%;
+	display: block;
+}
+
+.form-blocks > div > input[type="checkbox"] {
+	width: auto;
+	display: inline-block;
+}
+
+.warning {
+	color: var(--red-color);
+}
+
+th, td {
+	border: 2px solid var(--fg-color);
+}
+
+th > button:first-child, td > button:first-child {
+	margin: 0 10px 0 0;
+}
+
+th > button:last-child, td > button:last-child {
+	margin: 0 0 0 10px;
+}
+
+th > button:only-child, td > button:only-child {
+	margin: 0;
+}
+
+th, td {
+	padding: 20px;
+}
+
+tr:first-child > th:first-child, tr:first-child > td:first-child {
+	border-radius: 12px 0 0 0;
+}
+
+tr:first-child > th:last-child, tr:first-child > td:last-child {
+	border-radius: 0 32px 0 0;
+}
+
+tr:last-child > th:first-child, tr:last-child > td:first-child {
+	border-radius: 0 0 0 32px;
+}
+
+tr:last-child > th:last-child, tr:last-child > td:last-child {
+	border-radius: 0 0 12px 0;
+}
+
+tr:only-child > th:first-child, tr:only-child > td:first-child {
+	border-radius: 12px 0 0 32px;
+}
+
+tr:only-child > th:last-child, tr:only-child > td:last-child {
+	border-radius: 0 32px 12px 0;
+}
+
+tr:only-child > th:only-child, tr:only-child > td:only-child {
+	border-radius: var(--normal-border);
+}
+
+.card {
+	background-color: var(--high-bg-color);
+	border-radius: var(--normal-border);
+	padding: 20px;
+}
